@@ -1,6 +1,6 @@
 # pipico-operation
 
-This is the repo for everything about the Operation game I created on my YouTube channel Bringus Studios.
+This is the repo for everything about the Operation game I created on my YouTube channel Bringus Studios: https://www.youtube.com/@BringusStudios
 
 I am not responsible if you burn your house or loved ones down trying to make your own copy of the game. I will provide assistance when I can, but it will be infrequent if at all.
 
