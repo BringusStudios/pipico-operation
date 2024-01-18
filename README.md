@@ -20,16 +20,16 @@ As for wiring it all up... you're on your own. Look through main.py to get an id
 
 Misc links to the parts I used to build it:
 
-https://www.walmart.com/ip/Classic-Family-Favorite-Operation-Game-Board-Game-for-Kids-and-Family-Ages-6-and-Up/51404444
-https://www.amazon.com/dp/B0C5JCF5RS
-https://www.amazon.com/dp/B01N1GAWQ5
-https://www.amazon.com/dp/B089KRYQ5P
-https://www.amazon.com/dp/B0B4VWZD7X
-https://www.amazon.com/dp/B07BS8SRWH
-https://www.amazon.com/dp/B07WX2DSVB
-https://www.amazon.com/dp/B091PS6XQ4
-https://www.amazon.com/dp/B08C594VNP
-https://www.amazon.com/KEYESTUDIO-Raspberry-Starter-Headers-Breadboard/dp/B0861WJ2DD/
+- https://www.walmart.com/ip/Classic-Family-Favorite-Operation-Game-Board-Game-for-Kids-and-Family-Ages-6-and-Up/51404444
+- https://www.amazon.com/dp/B0C5JCF5RS
+- https://www.amazon.com/dp/B01N1GAWQ5
+- https://www.amazon.com/dp/B089KRYQ5P
+- https://www.amazon.com/dp/B0B4VWZD7X
+- https://www.amazon.com/dp/B07BS8SRWH
+- https://www.amazon.com/dp/B07WX2DSVB
+- https://www.amazon.com/dp/B091PS6XQ4
+- https://www.amazon.com/dp/B08C594VNP
+- https://www.amazon.com/KEYESTUDIO-Raspberry-Starter-Headers-Breadboard/dp/B0861WJ2DD/
 
 
 
