@@ -2,7 +2,7 @@
 
 This is the repo for everything about the Operation game I created on my YouTube channel Bringus Studios: https://www.youtube.com/@BringusStudios
 
-This code is VERY unprofessionally made, and it can feel unresponsive sometimes, and straight up just misbehave. I did my Bringus Best but at the end of the day it is spaghetti code, and there will be bugs. I am not responsible if you burn your house or loved ones down trying to make your own copy of the game. I will provide assistance when I can, but it will be infrequent if at all.
+This code is VERY unprofessionally made, and the game can feel weird and unresponsive sometimes because of it, and sometimes it just straight up misbehaves. I did my Bringus Best, but at the end of the day it is spaghetti code, and there will be bugs. I am not responsible if you burn your house or loved ones down trying to make your own copy of the game. I will provide assistance when I can, but it will be infrequent if at all.
 
 All of the code is available across the various .py files: 
 
