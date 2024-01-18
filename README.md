@@ -14,6 +14,6 @@ All of the code is available across the various .py files:
 - time_attack.py is gamemode 2 from the video
 - regular_game.py makes the game behave like a normal game of operation
 
-The .f3d file is the Fusion 360 project file with all the 3D printed parts.
+The .f3d file is the Fusion 360 project file with all the 3D printed parts. I used M3 brass inserts and various length M3 screws to bolt things down, and hot glue to attach the walls/legs and electronics mounts. The Pico needs some itty bitty screws that I have no idea the size of.
 
 As for wiring it all up... you're on your own. Look through main.py to get an idea of what gpio pins everything should be connected to. Making everything else work, like the DC motors, motor controller, serial adapter, etc., is all you.
