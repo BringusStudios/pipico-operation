@@ -19,15 +19,17 @@ game_led = machine.Pin(14, machine.Pin.OUT)
 uart = machine.UART(1, baudrate=57600, tx=8, rx=9)
 uart.write("Starting up...\r\n")
 
+# this function is used to create motor objects
+def create_motor(pin):
+    motor = PWM(Pin(pin))
+    motor.freq(1000)
+    return motor
+
 # make pins 2, 3, 4, and 5 pwm outputs that will control the 4 motors
-m1 = PWM(Pin(2))
-m2 = PWM(Pin(3))
-m3 = PWM(Pin(4))
-m4 = PWM(Pin(5))
-m1.freq(1000)
-m2.freq(1000)
-m3.freq(1000)
-m4.freq(1000)
+m1 = create_motor(2)
+m2 = create_motor(3)
+m3 = create_motor(4)
+m4 = create_motor(5)
 
 # send initial comminucation with the serial adapter to signify the button state
 print("PICO DEBUG MSG: no_contact")
@@ -40,32 +42,23 @@ def user_to_pwm(value):
     return value * 65025 / 100
 
 # these functions are what tells the motor controller to spin the motors
-def motor1(speed):
-    m1.duty_u16(int(user_to_pwm(speed)))
-
-def motor2(speed):
-    m2.duty_u16(int(user_to_pwm(speed)))
-
-def motor3(speed):
-    m3.duty_u16(int(user_to_pwm(speed)))
-
-def motor4(speed):
-    m4.duty_u16(int(user_to_pwm(speed)))
+def spin_motor(motor, speed):
+    motor.duty_u16(int(user_to_pwm(speed)))
 
 def all_motors(speed):
-    motor1(speed)
-    motor2(speed)
-    motor3(speed)
-    motor4(speed)
+    spin_motor(m1, speed)
+    spin_motor(m2, speed)
+    spin_motor(m3, speed)
+    spin_motor(m4, speed)
     
 # calling rumble() is the correct way you should be interacting with the motors.
 # don't drive the pins directly.
 def rumble(motor_name, speed):
     motor_functions = {
-        "motor1": motor1,
-        "motor2": motor2,
-        "motor3": motor3,
-        "motor4": motor4,
+        "motor1": spin_motor(m1),
+        "motor2": spin_motor(m2),
+        "motor3": spin_motor(m3),
+        "motor4": spin_motor(m4),
         "all_motors": all_motors
     }
 
