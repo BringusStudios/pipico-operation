@@ -20,16 +20,16 @@ uart = machine.UART(1, baudrate=57600, tx=8, rx=9)
 uart.write("Starting up...\r\n")
 
 # this function is used to create motor objects
-def create_motor(pin):
+def create_motor(pin, freq):
     motor = PWM(Pin(pin))
-    motor.freq(1000)
+    motor.freq(freq)
     return motor
 
 # make pins 2, 3, 4, and 5 pwm outputs that will control the 4 motors
-m1 = create_motor(2)
-m2 = create_motor(3)
-m3 = create_motor(4)
-m4 = create_motor(5)
+m1 = create_motor(2, 1000)
+m2 = create_motor(3, 1000)
+m3 = create_motor(4, 1000)
+m4 = create_motor(5, 1000)
 
 # send initial comminucation with the serial adapter to signify the button state
 print("PICO DEBUG MSG: no_contact")
